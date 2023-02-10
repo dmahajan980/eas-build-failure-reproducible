@@ -1,0 +1,151 @@
+{
+  "project_info": {
+    "project_number": "XXXXX",
+    "firebase_url": "https://schmooze-staging-default-rtdb.firebaseio.com",
+    "project_id": "schmooze-staging",
+    "storage_bucket": "schmooze-staging.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:XXXXX:android:XXXXX",
+        "android_client_info": {
+          "package_name": "com.schmoozeapps.schmooze"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "XXXXXXXXXX.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "XXXXXXXXXX"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "XXXXXXXXXX.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "XXXXXXXXXX.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.schmoozeapps.schmooze.staging"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:XXXXXXXXXX:android:XXXXXXXXXX",
+        "android_client_info": {
+          "package_name": "com.schmoozeapps.schmooze.dev"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "XXXXXXXXXX.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.schmoozeapps.schmooze.dev",
+            "certificate_hash": "XXXXXXXXXX"
+          }
+        },
+        {
+          "client_id": "XXXXXXXXXX.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.schmoozeapps.schmooze.dev",
+            "certificate_hash": "XXXXXXXXXX"
+          }
+        },
+        {
+          "client_id": "XXXXXXXXXX.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "XXXXXXXXXX-5zuRgDCgNeQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "XXXXXXXXXX.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "XXXXXXXXXX.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.schmoozeapps.schmooze.staging"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:XXXXXXXXXX:android:XXXXXXXXXX",
+        "android_client_info": {
+          "package_name": "com.schmoozeapps.schmooze.staging"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "XXXXXXXXXX.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.schmoozeapps.schmooze.staging",
+            "certificate_hash": "XXXXXXXXXX"
+          }
+        },
+        {
+          "client_id": "XXXXXXXXXX.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.schmoozeapps.schmooze.staging",
+            "certificate_hash": "XXXXXXXXXX"
+          }
+        },
+        {
+          "client_id": "XXXXXXXXXX.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "XXXXXXXXXX-5zuRgDCgNeQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "XXXXXXXXXX.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "XXXXXXXXXX.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.schmoozeapps.schmooze.staging"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,43 @@
+{
+  "cli": {
+    "version": ">= 2.6.0"
+  },
+  "build": {
+    "staging": {
+      "env": { "APP_VARIANT": "staging" }
+    },
+    "staging:simulator": {
+      "extends": "staging",
+      "distribution": "internal",
+      "ios": { "simulator": true }
+    },
+    "staging:dev": {
+      "extends": "staging",
+      "distribution": "internal",
+      "developmentClient": true
+    },
+    "staging:dev:simulator": {
+      "extends": "staging:dev",
+      "ios": { "simulator": true }
+    },
+    "production": {
+      "env": { "APP_VARIANT": "production" }
+    },
+    "production:simulator": {
+      "extends": "production",
+      "ios": { "simulator": true }
+    },
+    "production:dev": {
+      "extends": "production",
+      "distribution": "internal",
+      "developmentClient": true
+    },
+    "production:dev:simulator": {
+      "extends": "production:dev",
+      "ios": { "simulator": true }
+    }
+  },
+  "submit": {
+    "production": {}
+  }
+}

@@ -11,17 +11,61 @@
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
     "ios": {
-      "supportsTablet": true
+      "bundleIdentifier": "com.schmoozeapps.schmooze.staging",
+      "buildNumber": "1.0.0",
+      "googleServicesFile": "./config/GoogleService-Info.plist",
+      "icon": "./assets/icon.png",
+      "supportsTablet": true,
+      "usesAppleSignIn": true,
+      "infoPlist": {
+        "UIBackgroundModes": ["fetch", "remote-notification"]
+      }
     },
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "googleServicesFile": "./config/google-services.json",
+      "package": "com.schmoozeapps.schmooze.staging"
     },
-    "web": {
-      "favicon": "./assets/favicon.png"
+    "jsEngine": "hermes",
+    "plugins": [
+      "@react-native-firebase/app",
+      "@react-native-firebase/auth",
+      "@react-native-google-signin/google-signin",
+      "expo-apple-authentication",
+      [
+        "expo-build-properties",
+        {
+          "ios": {
+            "useFrameworks": "static",
+            "deploymentTarget": "14.0"
+          },
+          "android": {
+            "kotlinVersion": "1.6.21",
+            "enableProguardInReleaseBuilds": true,
+            "extraProguardRules": "-keep public class com.horcrux.svg.** {*;} -keep class com.swmansion.reanimated.** { *; } -keep class com.facebook.react.turbomodule.** { *; } -keep class expo.modules.** { *; }"
+          }
+        }
+      ],
+      [
+        "with-rn-image-crop-picker",
+        {
+          "PhotoLibraryUsageDescription": "Allow ${APP_NAME} to access your photos",
+          "CameraUsageDescription": "Allow ${APP_NAME} to access your camera",
+          "MicrophoneUsageDescription": "Allow ${APP_NAME} to access your microphone"
+        }
+      ]
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "f6df8ebe-d1f3-4651-afa9-b51e1f0acfba"
+      }
     }
   }
 }
